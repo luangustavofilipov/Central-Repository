@@ -3,7 +3,7 @@
 	
 <head>
 
-	<meta charset="uf-8">
+	<meta charset="utf-8">
 	
 	<!--Arquivo JavaScript-->
 	<script src="js/media.js"></script>
@@ -17,22 +17,31 @@
 
 <body>
 
-	<h1>Cálculo de édia de alunos</h1>
+	<h1>Cálculo de Média de Alunos</h1>
 
-	Nome: <input type="text" id="nome">
+    <div class="container">
+        
+        <form action="media.js" method="POST">
+        
 
-	Série: <input type="text" id="serie">
+    Nome: <input type="text" id="nome">
 
-	Primeiro Bimestre: <input type="text" id="primeiroBimestre">
+    Série: <input type="text" id="serie">
+
+    Primeiro Bimestre: <input type="text" id="primeiroBimestre">
 
     Segundo Bimestre: <input type="text" id="segundoBimestre">
 
     Terceiro Bimestre: <input type="text" id="terceiroBimestre">
-	
+    
     Quarto Bimestre: <input type="text" id="quartoBimestre">
 
-    <button type="submit">Enviar</button>
+    <button onclick="return media();" type="submit">Enviar</button>
 
+
+        </form>
+
+    </div>
 
 </body>
 
