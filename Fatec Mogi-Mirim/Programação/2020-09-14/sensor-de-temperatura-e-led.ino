@@ -6,11 +6,20 @@ int sensor = 0;
 
 int valor = 0;
 
+int ledVermelho = 2;
+
+int ledAmarelo = 3;
+
+int ledVerde = 4;
+
 //Inicio do Void "Setup"
 
 void setup(){
     //Parte onde inicia-se o código executado somente uma vez
     Serial.begin(9600);
+    pinMode(ledVermelho, OUTPUT);
+    pinMode(ledAmarelo, OUTPUT);
+    pinMode(ledVerde, OUTPUT);
 }
 
 //Incio do Void "Loop"
@@ -32,4 +41,24 @@ void loop(){
     Serial.println(celcius);
 
     delay(100);
+
+
+    if (celcius > 100)
+    {
+        digitalWrite(ledVermelho, HIGH);
+    } else{
+        digitalWrite(ledVermelho, LOW);
+    }   
+    if (celcius < 100 && celcius > 0)
+    {
+        digitalWrite(ledAmarelo, HIGH);
+    } else{
+        digitalWrite(ledAmarelo, LOW);
+    }   
+    if (celcius < 0)
+    {
+        digitalWrite(ledVerde, HIGH);
+    } else{
+        digitalWrite(ledVerde, LOW);
+    }   
 }
