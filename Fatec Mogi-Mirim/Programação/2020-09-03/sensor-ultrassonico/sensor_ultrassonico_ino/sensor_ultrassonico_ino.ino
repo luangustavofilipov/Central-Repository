@@ -1,8 +1,8 @@
 //Declaração das variáveis inteiras
 
-int pinoTrig = 2;
+int pinoTrig = 3;
 
-int pinoEcho = 3;
+int pinoEcho = 6;
 
 //Declaração das variáveis de distância
 
@@ -15,10 +15,6 @@ long distancia = 0;
 int ledVermelho = 6;
 
 int ledVerde = 4;
-
-//Declaração da variável para controlar o "Buzzer"
-
-int buzz = 8;
 
 //Início do código "Setup"
 
@@ -55,14 +51,11 @@ void loop()
     if (distancia < 15) {
 
         digitalWrite(ledVermelho, HIGH);
-
-        tone(buzz, 400, 1000);
     } 
     
     if(distancia >= 20){
         
         digitalWrite(ledVerde, HIGH);
-        noTone(buzz)
 
     }
 

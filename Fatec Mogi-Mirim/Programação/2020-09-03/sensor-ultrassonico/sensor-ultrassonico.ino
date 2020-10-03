@@ -2,7 +2,7 @@
 
 int pinoTrig = 3;
 
-int pinoEcho = 2;
+int pinoEcho = 6;
 
 //Declaração das variáveis dos Leds
 
@@ -15,10 +15,6 @@ int ledVerde = 5;
 long distancia = 0;
 
 long duracao = 0;
-
-//Declaração da variável do "buzzer"
-
-int buzz = 6;
 
 //Início do "Setup"
 
